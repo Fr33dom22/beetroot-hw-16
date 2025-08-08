@@ -1,0 +1,110 @@
+@use "../abstracts/vars" as pfVars;
+@use "../components/button";
+
+.main-container {
+  padding: 0 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  h2 {
+    font-family: pfVars.$second-family;
+    font-weight: 900;
+    font-size: 36px;
+    color: #666;
+    text-transform: uppercase;
+  }
+
+  .divider-middle-title {
+    width: 100px;
+    height: 1px;
+    background-color: pfVars.$gold;
+    margin: 10px auto 0;
+  }
+}
+
+.left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 65px 85px 65px 0;
+  flex: 1;
+}
+
+.divider-middle {
+  width: 1px;
+  background-color: pfVars.$gold;
+  align-self: stretch;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 70px 0 70px 85px;
+  flex: 1;
+
+  h2 {
+    font-family: pfVars.$font-family;
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  .divider-middle-title {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid pfVars.$gold;
+    width: 100px;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-family: pfVars.$font-family;
+    line-height: 1.5;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 22px;
+  }
+
+  .icon-block {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 49px;
+
+    .icon-social {
+      fill: #ccc;
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.15);
+        fill: #000;
+      }
+    }
+  }
+
+  p {
+    font-family: pfVars.$font-family;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+
+  .decore-wrap {
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,96 @@
+@use "../abstracts/vars" as pfVars;
+
+.photo-wrapper {
+  position: relative;
+  display: inline-block;
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .corner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .line {
+      position: absolute;
+      width: 100px;
+      height: 1px;
+      background-color: pfVars.$gold;
+    }
+
+    .line-rotated {
+      transform: rotate(90deg);
+      transform-origin: top left;
+    }
+  }
+
+  .top-left {
+    top: 0;
+    left: 0;
+
+    .line:nth-child(1) {
+      top: -15px;
+      left: -15px;
+    }
+
+    .line:nth-child(2) {
+      top: -15px;
+      left: -15px;
+    }
+  }
+
+  .top-right {
+    top: 0;
+    right: 0;
+
+    .line:nth-child(1) {
+      top: -15px;
+      right: -15px;
+    }
+
+    .line:nth-child(2) {
+      top: -15px;
+      right: -15px;
+      transform-origin: top right;
+      transform: rotate(-90deg);
+    }
+  }
+
+  .bottom-left {
+    bottom: 0;
+    left: 0;
+
+    .line:nth-child(1) {
+      bottom: -15px;
+      left: -15px;
+    }
+
+    .line:nth-child(2) {
+      bottom: -15px;
+      left: -15px;
+      transform-origin: bottom left;
+      transform: rotate(-90deg);
+    }
+  }
+
+  .bottom-right {
+    bottom: 0;
+    right: 0;
+
+    .line:nth-child(1) {
+      bottom: -15px;
+      right: -15px;
+    }
+
+    .line:nth-child(2) {
+      bottom: -15px;
+      right: -15px;
+      transform-origin: bottom right;
+      transform: rotate(90deg);
+    }
+  }
+}

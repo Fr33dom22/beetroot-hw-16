@@ -1,0 +1,28 @@
+@use "../abstracts/vars" as pfVars;
+@use "sass:color";
+
+button {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  font-family: pfVars.$third-family;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #666;
+  background-color: white;
+  border: 1px solid pfVars.$gold;
+
+  padding: 5px 10px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    color: #000;
+  }
+}
